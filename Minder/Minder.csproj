@@ -200,6 +200,18 @@
     <Compile Include="Migrations\201710121421140_te.Designer.cs">
       <DependentUpon>201710121421140_te.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710131211363_belh.cs" />
+    <Compile Include="Migrations\201710131211363_belh.Designer.cs">
+      <DependentUpon>201710131211363_belh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710131247506_bleeo.cs" />
+    <Compile Include="Migrations\201710131247506_bleeo.Designer.cs">
+      <DependentUpon>201710131247506_bleeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710131321035_efijfeqjifqejfqeioi.cs" />
+    <Compile Include="Migrations\201710131321035_efijfeqjifqejfqeioi.Designer.cs">
+      <DependentUpon>201710131321035_efijfeqjifqejfqeioi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -291,6 +303,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710121421140_te.resx">
       <DependentUpon>201710121421140_te.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710131211363_belh.resx">
+      <DependentUpon>201710131211363_belh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710131247506_bleeo.resx">
+      <DependentUpon>201710131247506_bleeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710131321035_efijfeqjifqejfqeioi.resx">
+      <DependentUpon>201710131321035_efijfeqjifqejfqeioi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
