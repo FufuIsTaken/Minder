@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Minder.Models.Profile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nickname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GeboorteDatum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Woonplaats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Profielfoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lengte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Educatie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interesse)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nickname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GeboorteDatum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Woonplaats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Profielfoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lengte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Educatie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interesse)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

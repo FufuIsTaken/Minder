@@ -1,0 +1,74 @@
+﻿@model Minder.Models.Profile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Profile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nickname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nickname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GeboorteDatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GeboorteDatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Woonplaats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Woonplaats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profielfoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profielfoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lengte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lengte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Educatie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Educatie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interesse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interesse)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
