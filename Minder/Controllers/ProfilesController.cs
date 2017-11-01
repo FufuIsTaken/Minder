@@ -20,6 +20,11 @@ namespace Minder.Controllers
             return View(db.Profiles.ToList());
         }
 
+        public ActionResult Search(ProfileSearchViewModel svm)
+        {
+            return View();
+        }
+
         // GET: Profiles/Details/5
         public ActionResult Details(int? id)
         {
